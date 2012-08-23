@@ -1,0 +1,33 @@
+.main-menu {
+  width:1000px;
+  overflow:hidden;
+}
+
+.dish {
+  float:left;
+  width:200px;
+  border:1px solid #ddd;
+  text-align:center;
+  padding:5px;
+  border-radius:15px;
+  margin:15px;
+  box-shadow:2px 2px #aaa;
+}
+
+.dish:hover {
+  border:1px solid #888;
+}
+
+.dish img {
+  width:130px;
+  height:130px;
+}
+
+.dish .price {
+  color:#666;
+  text-shadow: 1px 1px #bbb;
+}
+
+.dish .ui-btn {
+  margin-bottom:-20px;
+}

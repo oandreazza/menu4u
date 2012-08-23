@@ -1,55 +1,46 @@
 <!DOCTYPE html> 
 <html> 
 <head> 
-<title>Page Title</title> 
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.css" />
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.min.js"></script>
-<script type="text/javascript" src="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.js"></script>
+	<title>Page Title</title> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
 </head> 
 <body> 
+	<div data-role="page" id="primeira">
+		<div data-role="header" >
+			<h1>Restaurante Pueblo</h1>
+		</div>
 
-<div data-role="page" id="primeira">
-
-	<div data-role="header" >
-	 <h1>Restaurante Pueblo</h1>
+		<div data-role="content"> 
+			<ul data-role="listview" data-inset="true"> 
+			 <li data-role="list-divider">MENU</li> 
+			 <li><a href="#nachos" data-transition="slide">Primeira</a></li> 
+			 <li><a href="#sobremesa" data-transition="slide">Segunda</a></li>
+			 <li><a href="./index2.html" data-transition="slide">Pratos</a></li> 
+			</ul> 
+		</div>
 	</div>
 
-	<div data-role="content"> 
-		<ul data-role="listview" data-inset="true"> 
-		 <li data-role="list-divider">MENU</li> 
-		 <li><a href="#nachos" data-transition="fade">Antojitos</a></li> 
-		 <li><a href="#sobremesa">Quesadilla</a></li> 
-		 <li><a href="index2.html" data-rel="dialog" data-transition="pop">Tacos</a></li> 
-		 <li><a href="#segunda">Chimichanga</a></li> 
-		 <li><a href="#segunda">Fajitas</a></li> 
-		</ul> 
+	<div data-role="page" id="nachos">
+		<div data-role="header">
+			<h1>Nachos</h1>
+		</div>
+
+		<div data-role="content"> 
+			<p><a href="#primeira" data-rel="back">Primeira página</a></p> 
+		</div>
 	</div>
 
-</div>
+	<div data-role="page" id="sobremesa">
+		<div data-role="header">
+			<h1>Sobremesas</h1>
+		</div>
 
-<div data-role="page" id="nachos">
-
-	<div data-role="header">
-	 <h1>Nachos</h1>
+		<div data-role="content"> 
+			<p><a href="#primeira" data-rel="back">Primeira página</a></p> 
+		</div>
 	</div>
-
-	<div data-role="content"> 
-	 <p><a href="#primeira" data-rel="back">Primeira página</a></p> 
-	</div>
-
-</div>
-
-<div data-role="page" id="sobremesa">
-
-	<div data-role="header">
-	 <h1>Sobremesas</h1>
-	</div>
-
-	<div data-role="content"> 
-	 <p><a href="#primeira" data-rel="back">Primeira página</a></p> 
-	</div>
-
-</div>
-
 </body>
 </html>
